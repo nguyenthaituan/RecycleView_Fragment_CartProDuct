@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/productFragment">
+    <fragment
+        android:id="@+id/productFragment"
+       android:name="vn.edu.ntu.fragmentapp.btfargment.productFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_list_product" >
+        <action
+            android:id="@+id/action_productFragment_to_shoppingcartFragment2"
+            app:destination="@id/shoppingcartFragment2" />
+        <action
+            android:id="@+id/action_productFragment_to_addProductFragment"
+            app:destination="@id/addProductFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_buyProductFragment"
+            app:destination="@id/buyProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingcartFragment2"
+        android:name="vn.edu.ntu.fragmentapp.btfargment.shoppingcartFragment"
+        android:label="fragment_shoppingcart"
+        tools:layout="@layout/fragment_shoppingcart" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="vn.edu.ntu.fragmentapp.btfargment.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/buyProductFragment"
+        android:name="vn.edu.ntu.fragmentapp.btfargment.BuyProductFragment"
+        android:label="fragment_buy_product"
+        tools:layout="@layout/fragment_buy_product" />
+</navigation>
